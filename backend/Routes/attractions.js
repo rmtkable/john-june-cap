@@ -22,7 +22,10 @@ router.route('/:id').get((req, res) => {
     .then((location)=> {
         location.address = req.body.address
         location.category = req.body.category
+        location.website = req.body.website
+        location.imageURL = req.body.imageURL
     })
+
     .catch((err) => {
         res.status(400).json('Error ' + err)
     });

@@ -7,6 +7,14 @@ const locationSchema = new Schema({
 
     category: {
         type: String
+    },
+
+    website: {
+        type: String
+    },
+
+    imageURL: {
+        type: String
     }
 })
 
