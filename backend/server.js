@@ -20,9 +20,9 @@ connection.openUri('open', () => {
     console.log('MongoDB database connection established successfully');
 });
 
-const locationRouter = require('./Routes/location');
+const locationRouter = require('./Routes/locations');
 
-app.use('/location', locationRouter);
+app.use('/locations', locationRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: $(port)`);
