@@ -22,7 +22,7 @@ connection.openUri('open', () => {
 
 const locationRouter = require('./Routes/locations');
 
-app.use('/locations', locationRouter);
+app.use('./locations', locationRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: $(port)`);
