@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 // import '../styles/contact.css'
 // import {BACKEND_URL} from '../config'
 
-export default class contact extends Component {
+export default class Contact extends Component {
   constructor (props){
     super(props)
     this.onChangeName = this.onChangeName.bind(this);
@@ -40,9 +40,9 @@ export default class contact extends Component {
       comment: this.state.comment,
     }
     console.log(contact)
-    // axios.post(BACKEND_URL + 'contact/add', contact)
-    // .then(res=>console.log(res.data));
-    // window.location="/"
+    axios.post("mongodb+srv://johns:password1234@cluster0.cr9e0xj.mongodb.net/?retryWrites=true&w=majority" + 'contact', contact)
+    .then(res=>console.log(res.data));
+    window.location="/"
     this.props.history.push('/');
     
     this.setState({
