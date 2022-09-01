@@ -44,7 +44,7 @@ export default class Contact extends Component {
 
     axios.post(BACKEND_URL + 'contact/add', contact)
       .then(res=>console.log(res.data));
-    axios.post("mongodb+srv://johns:password1234@cluster0.cr9e0xj.mongodb.net/?retryWrites=true&w=majority" + 'contact', contact)
+    axios.post("mongodb+srv://johns:password1234@cluster0.cr9e0xj.mongodb.net/?retryWrites=true&w=majority" + "contact/add", contact)
       .then(res=>console.log(res.data));
 
     window.location="/"

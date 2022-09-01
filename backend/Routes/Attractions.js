@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let Attraction = require('../Models/AttractionsSchema');
+let Attraction = require('../Models/attractionsSchema');
 
 router.route('/').get((req, res) => {
     Attraction.find(req.params.category)

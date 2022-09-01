@@ -1,6 +1,6 @@
-const mongoose = require(mongoose);
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const attractionSchema = new Shcema({
+const attractionSchema = new Schema({
     title: {
         type: String,
     },
