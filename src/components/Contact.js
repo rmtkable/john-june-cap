@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-//import '../styles/Contact.css';
-import {BACKEND_URL} from '../config'
+//import '../styles/Contact.css'
 
 export default class contact extends Component {
   constructor (props){
     super(props)
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
-    this.onChangeMessage = this.onChangeMessage.bind(this);
+    this.onChangeQuestion = this.onChangeQuestion.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.state = {
         name: " ",
@@ -27,9 +26,9 @@ export default class contact extends Component {
       email: e.target.value
     })
   }
-  onChangeMessage(e){
+  onChangeQuestion(e){
     this.setState({
-      message: e.target.value
+      comment: e.target.value
     })
   }
   onSubmit(e){
@@ -37,10 +36,10 @@ export default class contact extends Component {
     const contact ={
       name: this.state.name,
       email: this.state.email,
-      message: this.state.message,
+      comment: this.state.comment,
     }
     console.log(contact)
-    axios.post(BACKEND_URL + 'contact/add', contact)
+    axios.post('http://localhost:5000/contact/add', contact)
     .then(res=>console.log(res.data));
     // window.location="/"
     this.props.history.push('/');
@@ -48,9 +47,68 @@ export default class contact extends Component {
     this.setState({
         name: '',
         email: '',
-        message: ''
+        comment: ''
     })
-    window.alert('Your comment has been submitted! Thank you!')
+    window.alert('Thank you for your inquiry')
     console.log(contact)
+  }
+  render() {
+    return (
+      <div className = 'contactPage'>
+      <div className="jumbotron jumbotron-fluid contacthover">
+      <div className="contactcontainer">
+              <h1>Contact Us</h1>
+          </div>
+      </div>
+        <div className="containerContact">
+            <div className="contentContact">
+            <form className='contact-form' onSubmit={this.onSubmit}>
+              <div className="form-group">
+                <label className="contact-label">Name: </label>
+                <input
+                  type="text"
+                  required
+                  className="form-control"
+                  value={this.state.name}
+                  onChange={this.onChangeName}
+                  >
+                  </input>
+              </div>
+              <div className="form-group">
+                  <label className="contact-label">Email:</label>
+                  <input
+                  type="email"
+                  required
+                  className="form-control"
+                  value={this.state.email}
+                  onChange={this.onChangeEmail}
+                  >
+                  </input>
+              </div>
+              <div className="form-group">
+                <label className="contact-label">Questions and Comments:</label>
+                  <textarea
+                  type="text"
+                  className="form-control"
+                  value={this.state.comment}
+                  onChange={this.onChangeQuestion}
+                  rows='6'
+                  >
+                  </textarea>
+              </div>
+              <div className="form-group">
+                  <input
+                  type="submit"
+                  value="Send"
+                  className="btn btn-contact"
+                  />
+              </div>
+            </form>
+            </div>
+            <div className="content">
+            </div>
+          </div>
+      </div>
+    )
   }
 }
