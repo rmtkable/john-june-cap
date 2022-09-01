@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-// import '../styles/contact.css'
+//import '../styles/Contact.css';
 import {BACKEND_URL} from '../config'
 
-export default class Contact extends Component {
+export default class contact extends Component {
   constructor (props){
     super(props)
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
-    this.onChangeQuestion = this.onChangeQuestion.bind(this);
+    this.onChangeMessage = this.onChangeMessage.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.state = {
         name: " ",
@@ -27,9 +27,9 @@ export default class Contact extends Component {
       email: e.target.value
     })
   }
-  onChangeQuestion(e){
+  onChangeMessage(e){
     this.setState({
-      comment: e.target.value
+      message: e.target.value
     })
   }
   onSubmit(e){
@@ -37,82 +37,20 @@ export default class Contact extends Component {
     const contact ={
       name: this.state.name,
       email: this.state.email,
-      comment: this.state.comment,
+      message: this.state.message,
     }
     console.log(contact)
-
-
     axios.post(BACKEND_URL + 'contact/add', contact)
-      .then(res=>console.log(res.data));
-    axios.post("mongodb+srv://johns:password1234@cluster0.cr9e0xj.mongodb.net/?retryWrites=true&w=majority" + "contact/add", contact)
-      .then(res=>console.log(res.data));
-
-    window.location="/"
+    .then(res=>console.log(res.data));
+    // window.location="/"
     this.props.history.push('/');
     
     this.setState({
         name: '',
         email: '',
-        comment: ''
+        message: ''
     })
-    window.alert('Thank you for your inquiry')
+    window.alert('Your comment has been submitted! Thank you!')
     console.log(contact)
-  }
-  render() {
-    return (
-      <div>
-      <div className="contactContainerReturn">
-          <h3 className='text-center'>Contact Us</h3>
-          <div className="containerContact">
-            <div className="contentContact">
-            <form id='contact-form' onSubmit={this.onSubmit}>
-              <div className="form-group">
-                <label className="contact-label">Name: </label>
-                <input
-                  type="text"
-                  required
-                  className="form-control"
-                  value={this.state.name}
-                  onChange={this.onChangeName}
-                  >
-                  </input>
-              </div>
-              <div className="form-group">
-                  <label className="contact-label">Email:</label>
-                  <input
-                  type="email"
-                  required
-                  className="form-control"
-                  value={this.state.email}
-                  onChange={this.onChangeEmail}
-                  >
-                  </input>
-              </div>
-              <div className="form-group">
-                <label className="contact-label">Questions and Comments:</label>
-                  <textarea
-                  type="text"
-                  className="form-control"
-                  value={this.state.comment}
-                  onChange={this.onChangeQuestion}
-                  rows='6'
-                  >
-                  </textarea>
-              </div>
-              <div className="form-group">
-                  <input
-                  type="submit"
-                  value="Send"
-                  className="btn btn-contact"
-                  />
-              </div>
-            </form>
-            </div>
-            <div className="content">
-            </div>
-          </div>
-      </div>
-      </div>
-    )
   }
 }
