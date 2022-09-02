@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import '../styles/navbar.css'
 
 export default class Navbar extends Component {
 
@@ -8,7 +8,7 @@ export default class Navbar extends Component {
     render() {
       return (
         <header>
-          <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+          <nav className="navbar navbar-fixed-top navbar-dark bg-dark navbar-expand-lg">
             <Link to="/" className="navbar-brand">Cincinnati</Link>
             <div className="collpase navbar-collapse">
             <ul className="navbar-nav mr-auto">

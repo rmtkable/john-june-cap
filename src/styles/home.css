@@ -1,19 +1,32 @@
-.home{
+/* .home{
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background: url(/assets/downTownPic.jpg);
-    background-position: center;
+    display: flex; */
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    /* background: url(/assets/downTownPic.jpg); */
+    /* background-position: center;
     background-size: cover;
     position: relative;
-};
+}; */
+
+.home img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.home img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
 
 .landing-text {
-    margin: 0;
-    color: white;
+    /* margin: 0; */
+    color: darkgrey;
     font-size: 55px;
-    text-shadow: 3px 3px black;
-    align-content: center;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    /* align-content: center; */
 
 };
