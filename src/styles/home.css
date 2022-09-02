@@ -1,24 +1,17 @@
-/* .home{
-    min-height: 100vh;
-    display: flex; */
-    /* align-items: center; */
-    /* justify-content: flex-end; */
-    /* background: url(/assets/downTownPic.jpg); */
-    /* background-position: center;
-    background-size: cover;
-    position: relative;
-}; */
+
 
 .home img {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
+    /* flex-shrink: 0; */
+    /* min-width: 100%;
+    min-height: 100%; */
 }
-.home img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
+
+img {
+    object-fit: scale-down;
 }
 
 .landing-text {
