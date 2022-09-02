@@ -1,9 +1,10 @@
 import React from "react";
+import '../styles/home.css'
 
 const Home = () => {
   return (
-    <div className="">
-      <p></p>
+    <div className="home">
+      <div className="landing-text">Cincinnati: Queen of the Midwest!</div>
     </div>
   );
 };

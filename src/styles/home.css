@@ -1,0 +1,19 @@
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(/assets/downTownPic.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+};
+
+.landing-text {
+    margin: 0;
+    color: white;
+    font-size: 55px;
+    text-shadow: 3px 3px black;
+    align-content: center;
+
+};
