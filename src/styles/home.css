@@ -9,10 +9,10 @@
     /* min-width: 100%;
     min-height: 100%; */
 }
-
+/* 
 img {
-    object-fit: scale-down;
-}
+    object-fit: cover;
+} */
 
 .landing-text {
     /* margin: 0; */

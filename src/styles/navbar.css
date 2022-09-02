@@ -1,5 +1,11 @@
-.navbar-fixed-top {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+.navbar-sticky-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: transparent;
+    
+}
+
+.navbar-item {
+    color: black;
 }

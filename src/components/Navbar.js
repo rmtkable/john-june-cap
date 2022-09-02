@@ -6,7 +6,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <header>
-        <nav class="navbar navbar-fixed-top navbar-dark bg-dark navbar-expand-lg">
+        <nav class="navbar navbar-sticky-top navbar-dark navbar-expand-lg">
           <Link to="/" class="navbar-brand">
             Cincinnati
           </Link>
@@ -39,5 +39,3 @@ export default class Navbar extends Component {
       );
     }
   }
-
-  <Navbar style={{backgroundColor: "#071740", position: "sticky"}} variant="dark" fixed="top"></Navbar>
