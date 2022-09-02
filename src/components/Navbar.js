@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/navbar.css'
 
 
 export default class Navbar extends Component {
@@ -7,7 +8,7 @@ export default class Navbar extends Component {
 
     render() {
       return (
-        <header>
+        <header className='header'>
           <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
             <Link to="/" className="navbar-brand">Cincinnati</Link>
             <div className="collpase navbar-collapse">
@@ -31,3 +32,5 @@ export default class Navbar extends Component {
       );
     }
   }
+
+  <Navbar style={{backgroundColor: "#071740", position: "sticky"}} variant="dark" fixed="top"></Navbar>
