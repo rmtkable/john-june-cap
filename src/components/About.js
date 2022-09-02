@@ -1,7 +1,7 @@
 import React from "react";
 
 // import Jheadshot from "../assets/Jheadshot.jpg";
-// import Theadshot from "../assets/Theadshot.jpg";
+import Theadshot from "../assets/Theadshot.jpg";
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
           attractions and entertainment.
         </p>
       </div>
-      <div className="">
+      <div className="container">
         <div class="row">
           <div class="col-lg-6">
             {/* <img
@@ -36,14 +36,14 @@ const About = () => {
             </p>
           </div>
           <div class="col-lg-6">
-            {/* <img
+            { <img
               src={Theadshot}
               alt="Picture of Tyler"
               width="220"
               height="220"
-            ></img> */}
+            ></img> }
             <h2 class="name">Tyler Wellman</h2>
-            <p class="description"></p>
+            <p class="description">Testing this out.</p>
             <p>
               <a
                 class="btn btn-lg btn-primary"
