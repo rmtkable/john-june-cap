@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAndroid } from 'react-icons/fa'
+
 // import Jheadshot from "../assets/Jheadshot.jpg";
 // import Theadshot from "../assets/Theadshot.jpg";
 
