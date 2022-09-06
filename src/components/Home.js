@@ -5,7 +5,7 @@ import {FaChessQueen} from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div class="home">
+    <div class="home container-fluid">
       <img src={downtownPic} alt="Downtown Cincinnati" />
       <p class="landing-text"><FaChessQueen /> Cincinnati: Queen of the Midwest! <FaChessQueen /></p>
     </div>

@@ -1,17 +1,14 @@
 
 
-.home img {
+.home {
     /* display: flex; */
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    text-align: center;
     /* flex-shrink: 0; */
     /* min-width: 100%;
     min-height: 100%; */
-}
-
-img {
-    object-fit: scale-down;
 }
 
 .landing-text {

@@ -6,12 +6,16 @@ export default class Navbar extends Component {
   render() {
     return (
       <header>
-        <nav class="navbar navbar-fixed-top navbar-dark bg-dark navbar-expand-lg">
+        <nav class="navbar-sticky-top top-nav">
           <Link to="/" class="navbar-brand">
             Cincinnati
           </Link>
-          <div class="collpase navbar-collapse">
-            <ul class="navbar-nav mr-auto">
+          <div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+              <div class="menu-button"></div>
+            </label>
+            <ul class=" menu">
               <li class="navbar-item">
                 <Link to="/" class="nav-link">
                   Home
@@ -33,11 +37,9 @@ export default class Navbar extends Component {
                 </Link>
               </li>
             </ul>
-            </div>
-          </nav>
-        </header>
-      );
-    }
+          </div>
+        </nav>
+      </header>
+    );
   }
-
-  <Navbar style={{backgroundColor: "#071740", position: "sticky"}} variant="dark" fixed="top"></Navbar>
+}
