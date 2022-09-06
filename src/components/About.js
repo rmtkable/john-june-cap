@@ -24,7 +24,7 @@ const About = () => {
               height="220"
             ></img> */}
             <h2 class="name">John Schuessler</h2>
-            <p class="description"></p>
+            <p class="description">Filler Text</p>
             <p>
               <a
                 class="btn btn-lg btn-primary"
@@ -43,7 +43,7 @@ const About = () => {
               height="220"
             ></img> }
             <h2 class="name">Tyler Wellman</h2>
-            <p class="description">Testing this out.</p>
+            <p class="description">Filler Text</p>
             <p>
               <a
                 class="btn btn-lg btn-primary"
