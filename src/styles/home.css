@@ -1,22 +1,24 @@
+img.homeimg {
+    border-style: solid !important;
+    border-radius: 2% !important;
+    overflow: auto;
+    width: 100%;
+    margin-top: 50px;
+}
+
 
 
 .home {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     overflow: hidden;
     text-align: center;
-    /* flex-shrink: 0; */
-    /* min-width: 100%;
-    min-height: 100%; */
+    margin: 0 auto;
 }
 
 .landing-text {
-    /* margin: 0; */
-    color: darkgrey;
+    color: #C6011F;
     font-size: 55px;
     text-shadow: 1px 1px black;
     text-align: center;
-    /* align-content: center; */
-
 };
