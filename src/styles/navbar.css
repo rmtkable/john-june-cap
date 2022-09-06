@@ -88,7 +88,7 @@
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  background: darkgray);
+  background: darkgray;
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {

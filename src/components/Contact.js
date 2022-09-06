@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-//import '../styles/Contact.css'
-import cinCinCity from "../assets/downTownPic.jpg"
+import '../styles/contact.css'
+import cinCinCity from "../assets/cinCinCity.jpg"
 
 export default class contact extends Component {
   constructor (props){
@@ -54,63 +54,63 @@ export default class contact extends Component {
     console.log(contact)
   }
   render() {
-    return (
-      <div className = 'contactPage'>
-      <div className="jumbotron jumbotron-fluid contacthover">
-      <div className="contactcontainer">
-              <h1>Contact Us</h1>
-              <img src= {cinCinCity} className='contactImg' alt="picture of Cincinnati" />
-          </div>
-      </div>
-        <div className="containerContact">
-            <div className="contentContact">
-            <form className='contact-form' onSubmit={this.onSubmit}>
-              <div className="form-group">
-                <label className="contact-label">Name: </label>
+    return (      
+    <div className = 'contactPage'>
+    <div className="jumbotron jumbotron-fluid contacthover">
+    <div className="contactcontainer">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+      <div className="containerContact column">
+      <img src= {cinCinCity} className='contactImg' alt="picture of Cincinnati" />
+          <div className="contentContact">
+          <form className='contact-form' onSubmit={this.onSubmit}>
+            <div className="form-group">
+              <label className="contact-label">Name: </label>
+              <input
+                type="text"
+                required
+                className="form-control"
+                value={this.state.name}
+                onChange={this.onChangeName}
+                >
+                </input>
+            </div>
+            <div className="form-group">
+                <label className="contact-label">Email:</label>
                 <input
-                  type="text"
-                  required
-                  className="form-control"
-                  value={this.state.name}
-                  onChange={this.onChangeName}
-                  >
-                  </input>
-              </div>
-              <div className="form-group">
-                  <label className="contact-label">Email:</label>
-                  <input
-                  type="email"
-                  required
-                  className="form-control"
-                  value={this.state.email}
-                  onChange={this.onChangeEmail}
-                  >
-                  </input>
-              </div>
-              <div className="form-group">
-                <label className="contact-label">Questions and Comments:</label>
-                  <textarea
-                  type="text"
-                  className="form-control"
-                  value={this.state.comment}
-                  onChange={this.onChangeQuestion}
-                  rows='6'
-                  >
-                  </textarea>
-              </div>
-              <div className="form-group">
-                  <input
-                  type="submit"
-                  value="Send"
-                  className="btn btn-contact"
-                  />
-              </div>
-            </form>
+                type="email"
+                required
+                className="form-control"
+                value={this.state.email}
+                onChange={this.onChangeEmail}
+                >
+                </input>
             </div>
-            <div className="content">
+            <div className="form-group">
+              <label className="contact-label">Questions and Comments:</label>
+                <textarea
+                type="text"
+                className="form-control"
+                value={this.state.comment}
+                onChange={this.onChangeQuestion}
+                rows='6'
+                >
+                </textarea>
             </div>
+            <div className="form-group">
+                <input
+                type="submit"
+                value="Send"
+                className="btn btn-contact"
+                />
+            </div>
+          </form>
           </div>
-      </div>
-    )
-  }
+          <div className="content">
+          </div>
+        </div>
+    </div>
+  )
+}
 }

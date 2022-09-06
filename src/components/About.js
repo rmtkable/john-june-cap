@@ -1,6 +1,6 @@
 import React from "react";
-
-// import Jheadshot from "../assets/Jheadshot.jpg";
+import '../styles/about.css'
+import Jheadshot from "../assets/Jheadshot.jpeg";
 import Theadshot from "../assets/Theadshot.jpg";
 
 const About = () => {
@@ -17,12 +17,12 @@ const About = () => {
       <div className="container">
         <div class="row">
           <div class="col-lg-6">
-            {/* <img
+            { <img className="rounded"
               src={Jheadshot}
               alt="Picture of John"
               width="220"
               height="220"
-            ></img> */}
+             ></img> }
             <h2 class="name">John Schuessler</h2>
             <p class="description">Filler Text</p>
             <p>
@@ -36,7 +36,7 @@ const About = () => {
             </p>
           </div>
           <div class="col-lg-6">
-            { <img
+            { <img className="rounded"
               src={Theadshot}
               alt="Picture of Tyler"
               width="220"

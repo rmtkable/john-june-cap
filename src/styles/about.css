@@ -1,13 +1,18 @@
 .container {
-    border-radius: 50;
     border-width: 1rem;
     border-color: black;
 }
 
 .name {
-    color: darkred;
+    color: #C6011f;
 }
 
 .description {
     color: black
 }
+
+.rounded {
+    border-style: double;
+    border-radius: 50% !important;
+}
+

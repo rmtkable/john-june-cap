@@ -1,0 +1,16 @@
+.containerContact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.contactImg {
+    border-style: double;
+    border-radius: 65%;
+}
+
+.contact-form {
+    padding-left: 5rem;
+}
+
