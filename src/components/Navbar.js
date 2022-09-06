@@ -6,16 +6,16 @@ export default class Navbar extends Component {
   render() {
     return (
       <header>
-        <nav class="navbar-sticky-top top-nav">
+        <nav class="navbar-fixed-top top-nav">
           <Link to="/" class="navbar-brand">
-            Cincinnati
+            Cincinnati, Ohio
           </Link>
           <div>
             <input id="menu-toggle" type="checkbox" />
             <label class="menu-button-container" for="menu-toggle">
               <div class="menu-button"></div>
             </label>
-            <ul class=" menu">
+            <ul class="menu">
               <li class="navbar-item">
                 <Link to="/" class="nav-link">
                   Home

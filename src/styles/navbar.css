@@ -1,9 +1,23 @@
-.navbar-sticky-top {
-    position: sticky;
+.navbar-fixed-top {
+    position: fixed;
     width: 100%;
-    top: 0;
-    background-color: transparent;
-    
+    background-color: darkgray;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.navbar-brand:hover {
+color: #C6011F;
+}
+
+.navbar-fixed-top .nav-link {
+  color: black;
+}
+
+.navbar-fixed-top .nav-link:hover {
+  color: #C6011F;
 }
 
 .nav-link {
@@ -25,7 +39,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: darkgray;
   /* background: linear-gradient(to left, #f46b45, #eea849); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* color: #FFF; */
