@@ -4,14 +4,11 @@ import '../styles/footer.css'
 function Footer() {
   return (
     <div className="footer">
-      <div className="">
-        <div className="">
           <h3>Capstone</h3>
           <p>
             Created by Kable Academy's 2022 Summer Bootcamp team of John
             Schuessler and Tyler Wellman.
           </p>
-        </div>
         <div className="">
           <h3>John Schuessler</h3>
           <a href="https://github.com/jschuess11">Github</a>
@@ -24,7 +21,6 @@ function Footer() {
             LinkedIn
           </a>
         </div>
-      </div>
     </div>
   );
 }

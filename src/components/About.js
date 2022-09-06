@@ -8,7 +8,7 @@ const About = () => {
     <div className="">
       <div className=""></div>
       <div className="">
-        <h3 class="">Mission Statement</h3>
+        <h3 class="statement">Mission Statement</h3>
         <p class="lead">
           Our mission is to provide visitors to Cincinnati with the best list of
           attractions and entertainment.
