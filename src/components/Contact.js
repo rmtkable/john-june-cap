@@ -55,13 +55,13 @@ export default class contact extends Component {
   }
   render() {
     return (      
-    <div className = 'contactPage'>
+    <div className ='contactPage'>
     <div className="jumbotron jumbotron-fluid contacthover">
     <div className="contactcontainer">
             <h1>Contact Us</h1>
         </div>
     </div>
-      <div className="containerContact column">
+      <div className="containerContact">
       <img src= {cinCinCity} className='contactImg' alt="picture of Cincinnati" />
           <div className="contentContact">
           <form className='contact-form' onSubmit={this.onSubmit}>
