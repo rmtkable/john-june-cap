@@ -110,6 +110,10 @@ export default class contact extends Component {
           <div className="content">
           </div>
         </div>
+        <div>
+          <h3 className="message">How can we help?</h3>
+          <p className='paragraph'>Didn't see your favorite spot? Found a place we missed or think should be added? Went on a wild tour that we didn't mention? Fill out the comment form above and we will get back with you! </p>
+        </div>
     </div>
   )
 }

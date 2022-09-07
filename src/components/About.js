@@ -56,6 +56,22 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="Trivia">
+        <h3 className="trivia-title">Cincinnati Trivia!</h3>
+          <p className="trivia-paragraph">Read up on some of the more interesting facts about Cincinnati! From movies, to music, to Jerry Springer, a lot of interesting people and things have part of their stories rooted within the city of Cincinnati!</p>
+          <ul className="trivia-list">
+            <li className="l1">Cincinnati is named after the Roman statesman and military leader, Lucius Cincinnatus.</li>
+            <li className="l2">Neil Armstrong taught aeronautical engineering at the University of Cincinnati from 71-79.</li>
+            <li className="l1">The Capitoline Wolf Statue in Eden Park was a gift from Benito Mussolini.</li>
+            <li className="l2">Rapper Eminem competed in Cincinnati's Scribble Jam Festival before making his mark on the music scene.</li>
+            <li className="l1">The Legendary Filmmaker Steven Spielberg was born in Cincinnati.</li>
+            <li className="l2">Speaking of films, many movies were filmed in Cincinnati such as Rain Man, Tango and Cash, and Seabiscuit.</li>
+            <li className="l1">In 1853 Cincinnati created the nation's first fully paid professional Fire Department.</li>
+            <li className="l2">The last passenger pigeon in the world, once the most common bird in North America, died in 1914 at the Cincinnati Zoo.</li>
+            <li className="l1">From 1977 to 1978 Jerry Springer served as the mayor of Cincinnati.</li>
+            <li className="l2">On a much darker note, under the direction of the Department of Defense, Cincinnati General Hospital conducted radiation experiments on advanced Cancer Patients during the height of the Cold War to determine how much radiation soldiers could withstand durind a Nuclear Fallout.</li>
+          </ul>
+      </div>
     </div>
   );
 };
