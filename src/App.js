@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
+import Attractions from "./pages/attractions";
 
 export default class App extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class App extends Component {
           <Navbar />
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          {/* <Route path="/attractions" component={Attractions} /> */}
+          <Route path="/attractions" component={Attractions} />
           <Route path="/contact" component={Contact} />
           <Footer />
         </Router>
