@@ -56,8 +56,8 @@ export const photos = [
   },
   {
     src: "https://images.squarespace-cdn.com/content/5c094a9725bf026a08cb9f9f/1591051834524-2ZUBICCD07MQEP6SP8KV/81318165_10156783409731016_6943365648223305728_o.jpg?format=1500w&content-type=image%2Fjpeg",
-    width: 4927,
-    height: 1000,
+    width: 4,
+    height: 3,
   },
   {
     src: "https://media.bizj.us/view/img/12176095/pic-campwashington-1*1200xx5694-3209-0-22.jpg",
