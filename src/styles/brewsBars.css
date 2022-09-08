@@ -13,14 +13,19 @@
 }
 
 .brewCards {
-    width: 50rem;
     justify-content: center;
     text-align: center;
+    width: 50rem;
 }
 
 .container-card {
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-left: 100px;
 }
 
+.card-img-top {
+    border-radius: 50%;
+    border-style: double;
+}
