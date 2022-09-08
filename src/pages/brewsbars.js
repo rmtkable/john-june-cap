@@ -1,68 +1,33 @@
-import React, { Component } from "react";
-//import './styles/brewsbars.css'
+import React from "react";
+import '../styles/brewsBars.css'
+import rhinegeistPic from "../assets/rhinegeistPic.jpg"
 
-class Brewsbars extends Component {
-    render() {
-        return(
-            <div className="main">
-                <div className="bar-display">
-                    <div className="display-body">
-                        <img src={this.props.img} alt='' />
-                        <h2 className="bar-h2">{this.props.title}</h2>
-                        <p className="bar-info">{this.props.paragraph}</p>
-                        <a href={this.props.link} target='blank'><div className="button">{this.props.btn}</div></a>
+export const Brewsbars = () => {
+    return (
+        <div>
+            <div className="home">
+                <div className="brew-banner">
+                    <div className="aboutContainer">
+                        <h1>Breweries and Bars</h1>
                     </div>
                 </div>
             </div>
-        )
-    }
+
+            <div className="brewHeader">
+                <h1>Check out some of the top Breweries and Bars in Cincinnati!</h1>
+            </div>
+
+            <div className="brewCards">
+                <div className="container card">
+                    <h5 className="card-title">Rhinegeist</h5>
+                    <img src={rhinegeistPic} className="card-img-top" alt="Rhinegeist Brewery" />
+                </div>
+                <div className="card-body">
+                    <p className="card-text">This large brewery and event space in historic Over-the-Rhine (housed in an old Moerlein bottling plant) produces hoppy and sessionable ales and Cidergeist, its line of crushable ciders. The seasonal deck is an excellent addition to the city’s rooftop bar scene. The first half of Rhinegeist’s name hails from its location in Cincinnati. The second half, “Geist,” is a German word that translates to “ghost” and a nod to the city’s German heritage.</p>
+                </div>
+            </div>
+        </div>
+    )
 }
 
-class BrewbarsCards extends Component {
-    render() {
-        return (
-            <>
-            <div class='header'>
-            <div className="bars-banner">
-            </div>
-                <h1>Breweries and Bars</h1>   
-            </div>
-            <div className="brewbars">
-                <Brewsbars
-                img='https://filler.jpg'
-                title='filler'
-                paragraph='filler'
-                link='https://filler.com' />
-
-                <Brewsbars
-                img='https://filler.jpg'
-                title='filler'
-                paragraph='filler'
-                link='https://filler.com' />
-
-                <Brewsbars
-                img='https://filler.jpg'
-                title='filler'
-                paragraph='filler'
-                link='https://filler.com' />
-
-                <Brewsbars
-                img='https://filler.jpg'
-                title='filler'
-                paragraph='filler'
-                link='https://filler.com' />
-                
-                <Brewsbars
-                img='https://filler.jpg'
-                title='filler'
-                paragraph='filler'
-                link='https://filler.com' />
-            </div>
-
-            </>
-
-        )
-    }
-}
-
-export default (Brewsbars, BrewbarsCards);
+export default Brewsbars

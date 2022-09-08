@@ -1,0 +1,14 @@
+.home {
+    background-image: url(../assets/brewBarsBanner.jpg);
+    background-size: cover;
+}
+
+.aboutContainer {
+    color: #fff;
+}
+
+.brewHeader {
+    color: #C6011f
+}
+
+
