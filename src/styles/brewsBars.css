@@ -1,6 +1,4 @@
-.test {
-    text-align: center;
-}
+
 
 .brew-banner{
     margin-top: 80px;
@@ -12,15 +10,11 @@
     margin-top: 10px;
 }
 
-.brewCards {
-    width: 50rem;
-    justify-content: center;
-    text-align: center;
-}
-
 .container-card {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    width: 70%; 
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }
 
