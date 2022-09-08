@@ -1,14 +1,26 @@
-.home {
-    background-image: url(../assets/brewBarsBanner.jpg);
-    background-size: cover;
+.test {
+    text-align: center;
 }
 
-.aboutContainer {
+.brew-banner{
+    margin-top: 80px;
     color: #fff;
 }
 
 .brewHeader {
-    color: #C6011f
+    color: #C6011f;
+    margin-top: 10px;
 }
 
+.brewCards {
+    width: 50rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
