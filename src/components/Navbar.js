@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
+import Button from "./DropdownButton";
 
 export default class Navbar extends Component {
   render() {
@@ -26,23 +27,7 @@ export default class Navbar extends Component {
                   About
                 </Link>
               </li>
-              <li className="navbar-item dropdown">
-                <Link className="dropbtn">Attractions</Link>
-                <div className="dropdown-content">
-                  <Link className="dropdown" to="/Breweries">
-                    Breweries
-                  </Link>
-                  <Link className="dropdown" to="/Food">
-                    Food
-                  </Link>
-                  <Link className="dropdown" to="/Entertainment">
-                    Entertainment
-                  </Link>
-                  <Link className="dropdown" to="/ArtsAndMuseums">
-                    Arts & Museums
-                  </Link>
-                </div>
-              </li>
+              <Button />
               <li class="navbar-item">
                 <Link to="/contact" class="nav-link">
                   Contact
