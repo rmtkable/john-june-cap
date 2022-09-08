@@ -6,7 +6,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <header>
-        <nav class="navbar-fixed-top top-nav">
+        <div class="navbar-fixed-top top-nav">
           <Link to="/" class="navbar-brand">
             Cincinnati, Ohio
           </Link>
@@ -26,10 +26,22 @@ export default class Navbar extends Component {
                   About
                 </Link>
               </li>
-              <li class="navbar-item">
-                <Link to="/attractions" class="nav-link">
-                  Attractions
-                </Link>
+              <li className="navbar-item dropdown">
+                <Link className="dropbtn">Attractions</Link>
+                <div className="dropdown-content">
+                  <Link className="dropdown" to="/Breweries">
+                    Breweries
+                  </Link>
+                  <Link className="dropdown" to="/Food">
+                    Food
+                  </Link>
+                  <Link className="dropdown" to="/Entertainment">
+                    Entertainment
+                  </Link>
+                  <Link className="dropdown" to="/ArtsAndMuseums">
+                    Arts & Museums
+                  </Link>
+                </div>
               </li>
               <li class="navbar-item">
                 <Link to="/contact" class="nav-link">
@@ -38,7 +50,7 @@ export default class Navbar extends Component {
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </header>
     );
   }

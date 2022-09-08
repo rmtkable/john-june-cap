@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import cinCinCity from '../assets/cinCinCity.jpg'
+
 
 //import './styles/attractions.css'
 
@@ -56,7 +56,7 @@ const Attraction = (props) => (
               <tr>
                 <th>Title</th>
                 <th>Description</th>
-                <img src={cinCinCity} style={{width: '100px', height: '100px'}} alt="cincinnati"/>
+               
                 <th>Website</th>
                 <th>Location</th>
                 <th>Category</th>
