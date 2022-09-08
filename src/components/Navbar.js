@@ -11,6 +11,7 @@ export default class Navbar extends Component {
           <Link to="/" class="navbar-brand">
             Cincinnati, Ohio
           </Link>
+          <Button />
           <div>
             <input id="menu-toggle" type="checkbox" />
             <label class="menu-button-container" for="menu-toggle">
@@ -27,7 +28,6 @@ export default class Navbar extends Component {
                   About
                 </Link>
               </li>
-              <Button />
               <li class="navbar-item">
                 <Link to="/contact" class="nav-link">
                   Contact

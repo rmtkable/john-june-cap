@@ -4,9 +4,6 @@
     background-color: darkgray;
 }
 
-.navbar-brand {
-  color: black;
-}
 
 .navbar-brand:hover {
 color: #C6011F;
@@ -180,4 +177,12 @@ color: #C6011F;
 
 .dropdown-item {
   color: white;
+}
+.dropdown-item:focus {
+  color: white;
+  background-color: black;
+}
+
+#dropdown-basic-button:hover {
+  color: #C6011F;
 }

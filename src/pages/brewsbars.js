@@ -15,8 +15,6 @@ export const Brewsbars = () => {
                         <h1>Breweries and Bars</h1>
                     </div>
                 </div>
-            
-
             <div className="brewHeader">
                 <h1>Check out some of the top Breweries and Bars in Cincinnati!</h1>
             </div>
