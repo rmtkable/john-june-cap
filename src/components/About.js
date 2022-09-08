@@ -24,7 +24,7 @@ const About = () => {
               height="220"
              ></img> }
             <h2 class="name">John Schuessler</h2>
-            <p class="description">Filler Text</p>
+            <p class="description">John is a Cincinnati native who loves basketball. He has a business background and enjoys spending time learning and being with family and friends. He really enjoys troubleshooting and solving problems.</p>
             <p>
               <a
                 class="btn btn-lg btn-primary"
@@ -43,7 +43,7 @@ const About = () => {
               height="220"
             ></img> }
             <h2 class="name">Tyler Wellman</h2>
-            <p class="description">Filler Text</p>
+            <p class="description">Tyler is a Columbus, Ohio native who has recently learned the joys of Cincinnati. He enjoys gaming with family and friends as well as watching the latest trends on various streaming platforms.</p>
             <p>
               <a
                 class="btn btn-lg btn-primary"
