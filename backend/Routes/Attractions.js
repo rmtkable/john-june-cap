@@ -2,7 +2,7 @@ const router = require('express').Router();
 let Attraction = require('../Models/attractionsSchema');
 
 router.route('/').get((req, res) => {
-    Attraction.find(req.params.category)
+    Attraction.find()
     .then(attraction => 
         res.json(attraction))
         .catch((err) => {
@@ -17,6 +17,8 @@ router.route('/:id').get((req, res) => {
     }).catch((err) => {
         res.status(400).json('Error ' + err)
     });
+
+        
 }).put((req, res) => {
     Attraction.findById(req.params.id)
     .then((attraction) => {
@@ -28,9 +30,31 @@ router.route('/:id').get((req, res) => {
         attraction.category = req.body.category 
     })
     .catch((err) => {
-        res.status(400).json('Error ' + err)
+        res.status(400).json('Error' + err)
     });
 });
 
+router.route('/add').post((req, res) => {
+    const title = req.body.title
+    const description = req.body.description
+    const imageURL = req.body.imageURL
+    const website = req.body.website
+    const location = req.body.location
+    const category = req.body.category
+    const newAttraction = new Attraction ({
+        title,
+        description,
+        imageURL,
+        website,
+        location,
+        category,})
+    newAttraction.save()
+        .then(()=>{
+            res.json('Attraction Added')
+            })
+            .catch((err)=>{
+                res.status(400).json("Error: " + err)
+            })
+})
 
 module.exports = router;

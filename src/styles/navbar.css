@@ -182,6 +182,10 @@ color: #C6011F;
   color: white;
   background-color: black;
 }
+.dropdown-item:active {
+  color: white;
+  background-color: black;
+}
 
 #dropdown-basic-button:hover {
   color: #C6011F;

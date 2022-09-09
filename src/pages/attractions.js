@@ -1,22 +1,42 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
+import "../styles/attractions.css";
 
-//import './styles/attractions.css'
+const Attraction = (props) => {
+  return (
+    <div className="allAttractions">
+      <div className="attractionsCard">
+        <div className="cardImage">
+          <img
+            className="attractionImage"
+            src={props.attraction.imageURL}
+            alt="attraction picture"
+          />
+        </div>
+        <div>
+          <div className="text-name">{props.attraction.title}</div>
+          <div className="category">
+            <p className="link-site">{props.attraction.category}</p>
+          </div>
+          <div className="location">
+            <p className="link-site">{props.attraction.location}</p>
+          </div>
 
-const Attraction = (props) => (
-  <tr>
-    <td>{props.attraction.title}</td>
-    <td>{props.attraction.description}</td>
-    <td>{props.attraction.imageURL}</td>
-    <td>{props.attraction.website}</td>
-    <td>{props.attraction.location}</td>
-    <td>{props.attraction.category}</td>
-    <td>
-      <Link to={"/edit/" + props.attraction._id}>edit</Link> |{" "}
-    </td>
-  </tr>
-);
+          <div className="website">
+            <a
+              className="link"
+              href={props.attraction.website}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default class Attractions extends Component {
   constructor(props) {
@@ -26,38 +46,37 @@ export default class Attractions extends Component {
   }
   componentDidMount() {
     axios
-      .get("/attractions/")
+      .get("http://localhost:5000/attractions")
       .then((response) => {
         this.setState({ attractions: response.data });
+        console.log("it might be working if you see this");
       })
       .catch((error) => {
         console.log(error);
       });
   }
 
-  Attractions() {
+  attractionsList() {
     return this.state.attractions.map((currentAttraction) => {
       return (
-        <Attraction exercise={currentAttraction} key={currentAttraction._id} />
+        <Attraction
+          attraction={currentAttraction}
+          key={currentAttraction._id}
+        />
       );
     });
   }
   render() {
     return (
       <div>
-        <h3>Attractions</h3>
-        <table className="table">
-          <thead className="thead-light">
-            <tr>
-              <th>Title</th>
-              <th>Description</th>
-              <th>Website</th>
-              <th>Location</th>
-              <th>Category</th>
-            </tr>
-          </thead>
-          <tbody>{this.Attractions()}</tbody>
-        </table>
+        <div className="row">
+          <div className="attractionsContainer">
+            <h2 className="attractionsHeader">Cincinnati Attractions</h2>
+            <div className="attractionsInnerContainer">
+              {this.attractionsList()}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
