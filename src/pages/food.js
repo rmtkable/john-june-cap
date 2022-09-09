@@ -17,7 +17,7 @@ export const Food = () => {
             <div className="foodCards">
                 <div className="container-card">
                     <h5 className="card-title">Food</h5>
-                    <img src={} className="card-img-top" alt="Food" />
+                    {/* <img src={} className="card-img-top" alt="Food" /> */}
                 </div>
                 <div className="card-body">
                     <p className="card-text">Food paragraph placeholder</p>
@@ -29,7 +29,7 @@ export const Food = () => {
             <div className="foodCards">
                 <div className="container-card">
                     <h5 className="card-title">Food</h5>
-                    <img src={} className="card-img-top" alt="Food" />
+                    {/* <img src={} className="card-img-top" alt="Food" /> */}
                 </div>
                 <div className="card-body">
                     <p className="card-text">Food paragraph placeholder</p>
@@ -41,7 +41,7 @@ export const Food = () => {
             <div className="foodCards">
                 <div className="container-card">
                     <h5 className="card-title">Food</h5>
-                    <img src={} className="card-img-top" alt="Food" />
+                    {/* <img src={} className="card-img-top" alt="Food" /> */}
                 </div>
                 <div className="card-body">
                     <p className="card-text">Food paragraph placeholder</p>
@@ -53,7 +53,7 @@ export const Food = () => {
             <div className="foodCards">
                 <div className="container-card">
                     <h5 className="card-title">Food</h5>
-                    <img src={} className="card-img-top" alt="Food" />
+                    {/* <img src={} className="card-img-top" alt="Food" /> */}
                 </div>
                 <div className="card-body">
                     <p className="card-text">Food paragraph placeholder</p>
@@ -65,7 +65,7 @@ export const Food = () => {
             <div className="foodCards">
                 <div className="container-card">
                     <h5 className="card-title">Food</h5>
-                    <img src={} className="card-img-top" alt="Food" />
+                    {/* <img src={} className="card-img-top" alt="Food" /> */}
                 </div>
                 <div className="card-body">
                     <p className="card-text">Food paragraph placeholder</p>
@@ -77,3 +77,5 @@ export const Food = () => {
             </div>
             </div>
             )}
+
+            export default Food
