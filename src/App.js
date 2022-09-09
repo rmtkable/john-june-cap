@@ -9,6 +9,7 @@ import Attractions from "./pages/attractions";
 import Brewsbars from "./pages/brewsBars";
 import Food from "./pages/food";
 import Entertainment from "./pages/entertainment";
+import Arts from "./pages/artsMuseums"
 
 export default class App extends Component {
   render() {
@@ -22,6 +23,7 @@ export default class App extends Component {
           <Route path="/brewsBars" component={Brewsbars} />
           <Route path="/food" component={Food} />
           <Route path="/entertainment" component={Entertainment} />
+          <Route path="/artsMuseums" component={Arts} />
           <Route path="/contact" component={Contact} />
           <Footer />
         </Router>
