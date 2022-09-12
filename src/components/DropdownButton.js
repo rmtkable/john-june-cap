@@ -13,7 +13,7 @@ function Button() {
       <Dropdown.Item href="/food">Food</Dropdown.Item>
       <Dropdown.Item href="/entertainment">Entertainment</Dropdown.Item>
       <Dropdown.Item href="/artsMuseums">Arts & Museums</Dropdown.Item>
-      <Dropdown.Item href="/attractions">VIEW ALL</Dropdown.Item>
+      <Dropdown.Item href="/view-attractions">VIEW ALL</Dropdown.Item>
     </DropdownButton>
   );
 }
