@@ -1,6 +1,7 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import "../styles/navbar.css";
+import { Link } from 'react-router-dom';
 
 function Button() {
   return (
@@ -9,11 +10,11 @@ function Button() {
       title="Attractions"
       className="btn"
     >
-      <Dropdown.Item href="/brewsBars">Breweries</Dropdown.Item>
-      <Dropdown.Item href="/food">Food</Dropdown.Item>
-      <Dropdown.Item href="/entertainment">Entertainment</Dropdown.Item>
-      <Dropdown.Item href="/artsMuseums">Arts & Museums</Dropdown.Item>
-      <Dropdown.Item href="/view-attractions">VIEW ALL</Dropdown.Item>
+      <Dropdown.Item><Link to="/brewsBarsBreweries"></Link></Dropdown.Item>
+      <Dropdown.Item><Link to="food">Food</Link></Dropdown.Item>
+      <Dropdown.Item><Link to="entertainment">Entertainment</Link></Dropdown.Item>
+      <Dropdown.Item><Link to="artsMuseums">Arts & Museums</Link></Dropdown.Item>
+      <Dropdown.Item><Link to="attractions">VIEW ALL</Link></Dropdown.Item>
     </DropdownButton>
   );
 }
