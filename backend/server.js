@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const fs = require('fs');
 const path = require('path');
 
 
@@ -27,6 +28,7 @@ const attractionRouter = require('./Routes/attractions');
 const contactRouter = require('./Routes/contact')
 app.use('/attractions', attractionRouter);
 app.use('/contact', contactRouter);
+app.use(express.static(path.join(__dirname, '../build')))
 
 // if (process.env.NODE_ENV === 'production') {
 //     app.use(express.static('/build'))

@@ -46,7 +46,7 @@ export default class Attractions extends Component {
   }
   componentDidMount() {
     axios
-      .get("http://localhost:5000/attractions")
+      .get("/attractions")
       .then((response) => {
         this.setState({ attractions: response.data });
         console.log("it might be working if you see this");
